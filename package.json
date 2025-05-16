@@ -1,0 +1,41 @@
+{
+  "name": "comet-doc",
+  "description": "code library",
+  "version": "0.0.1",
+  "license": "MIT",
+  "type": "module",
+  "author": "passwordgloo",
+  "homepage": "https://law.iglooblog.top",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/passwordgloo/comet-law"
+  },
+  "keywords": [
+    "彗星法律法规资料库",
+    "comet legislation"
+  ],
+  "scripts": {
+    "docs:build": "vuepress build docs",
+    "docs:clean-dev": "vuepress dev docs --clean-cache",
+    "docs:dev": "vuepress dev docs",
+    "docs:update-package": "pnpm dlx vp-update",
+    "commit": "git add . && czg emoji",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 2"
+  },
+  "devDependencies": {
+    "@vuepress/bundler-vite": "2.0.0-rc.22",
+    "@vuepress/plugin-blog": "2.0.0-rc.102",
+    "@vuepress/theme-default": "2.0.0-rc.102",
+    "conventional-changelog-cli": "^5.0.0",
+    "czg": "^1.11.1",
+    "sass-embedded": "^1.87.0",
+    "vue": "^3.5.13",
+    "vuepress": "2.0.0-rc.22"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.5",
+    "@vuepress/plugin-meilisearch": "2.0.0-rc.102",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.5"
+  }
+}

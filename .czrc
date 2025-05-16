@@ -1,0 +1,11 @@
+{
+    "$schema": "https://cdn.jsdelivr.net/gh/Zhengqbbb/cz-git@1.11.0/docs/public/schema/cz-git.json",
+    "scopes": [
+        "civillaw",
+        "party"
+    ],
+    "allowBreakingChanges": [
+        "docs",
+        "fix"
+    ]
+}

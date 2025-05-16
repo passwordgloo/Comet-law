@@ -1,0 +1,43 @@
+@import "tailwindcss/theme.css" layer(theme);
+
+@import "tailwindcss/utilities.css" layer(utilities);
+
+:root ,[data-theme='dark']{
+    --vp-c-accent: rgb(236,94,114);
+    --vp-c-accent-bg:var(--vp-c-accent);
+    --vp-c-accent-hover:var(--vp-c-accent);
+}
+
+.vp-sidebar-item.active:not(p.vp-sidebar-heading){
+    background-color: #f8ebfcaf;
+}
+
+[data-theme='dark']{
+    .vp-sidebar-item.active:not(p.vp-sidebar-heading){
+        background-color: var(--vp-c-bgb);
+    }
+}
+
+/* 滚动条 */
+.vp-sidebar::-webkit-scrollbar-thumb {
+    background-color: rgb(236,94,114)
+}
+
+/* 回到顶部 */
+.vp-back-to-top-button {
+    color:rgb(236,94,114);
+    &:hover{
+        color:rgb(236,94,114)
+    }
+}
+
+
+a,em{
+    color:rgb(236,94,114)
+}
+
+strong {
+    padding: 2px;
+    background-image: linear-gradient(180deg, transparent 50%, rgb(233, 119, 134) 50%);
+    background-repeat: no-repeat;
+}
