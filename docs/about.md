@@ -1,7 +1,4 @@
 ---
-category:
-  - category A
-  - category B
 sidebar: heading
 archive: true
 timeline: true

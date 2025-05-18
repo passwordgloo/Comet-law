@@ -1,7 +1,4 @@
 ---
-tag:
-  - tag A
-  - tag B
 sidebar: heading
 archive: true
 layout: Banner

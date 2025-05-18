@@ -9,22 +9,32 @@ export const zhNavbar = [
     {
         text: '法律法规',
         children: [
-            { text: '宪法相关法', link: 'constitution/' },
-            { text: '民商法', link: 'civillaw/' },
-            { text: '行政法', link: 'administrative/' },
-            { text: '经济法', link: 'economic' },
-            { text: '社会法', link: 'sociallaw/' },
-            { text: '刑法', link: 'criminal/' },
-            { text: '诉讼与非诉讼程序法', link: 'proceeding/' },
+            {
+                text:'法律文件',
+                children:
+                [
+                    { text: '宪法相关法', link: 'constitution/' },
+                    { text: '民商法', link: 'civillaw/' },
+                    { text: '行政法', link: 'administrative/' },
+                    { text: '经济法', link: 'economic' },
+                    { text: '社会法', link: 'sociallaw/' },
+                    { text: '刑法', link: 'criminal/' },
+                    { text: '诉讼与非诉讼程序法', link: 'proceeding/' },
+                ]
+            },
+            {
+                text: '部门规章',
+                link: 'regulate/1.1',
+            },
         ],
     },
     {
-        text: '部门规章',
-        link: 'regulate/1.1',
-    },
-    {
-        text: '党务会议',
-        link: 'party/1',
+        text: '非法律',
+        children: [
+            { text: '党务会议',link: 'party/1',},
+            { text: '司法解释',link: 'explain/1.1',},
+            { text: '政策文件',link: 'policy/1.1',},
+        ]
     },
     {
         text: '标签',
@@ -33,10 +43,6 @@ export const zhNavbar = [
     {
         text: '分类',
         link: '/category/',
-    },
-    {
-        text: '归档',
-        link: '/article/',
     },
     // 字符串 - 页面文件路径
     '/about'
