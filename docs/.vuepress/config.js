@@ -36,7 +36,12 @@ export default defineUserConfig({
         navbar: zhNavbar,
         sidebar: zhSidebar,
         notFound: ['没找到', '网页走丢了'],
-        backToHome: '返回首页'
+        backToHome: '返回首页',
+        editLinkText: '编辑此页',
+        contributorsText: '📖 作者',
+        lastUpdatedText: '上次更新',
+        prev: '上一篇',
+        next: '下一篇'
       },
       '/en/': {
         selectLanguageName: 'English',
