@@ -1,4 +1,8 @@
 ---
+layout: Home
+---
+
+<!-- ---
 home: true
 heroImage: /comet.png
 heroText: Comet legislation library
@@ -18,4 +22,4 @@ features:
 - title: 🎨 Two-color theme
   details: Supports light/dark themes
 footer: MIT Licensed | Copyright © 2023-present Passwordgloo
----
+--- -->

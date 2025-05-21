@@ -1,16 +1,18 @@
 import { defineClientConfig } from 'vuepress/client'
-import Banner from './layouts/Banner.vue'
 import Article from './layouts/Article.vue'
+import Banner from './layouts/Banner.vue'
 import Category from './layouts/Category.vue'
+import Home from './layouts/Home.vue'
 import Tag from './layouts/Tag.vue'
 import Timeline from './layouts/Timeline.vue'
 
 export default defineClientConfig({
   // we provide some blog layouts
   layouts: {
-    Banner,
     Article,
+    Banner,
     Category,
+    Home,
     Tag,
     Timeline,
   },
