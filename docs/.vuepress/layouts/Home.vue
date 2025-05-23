@@ -89,11 +89,11 @@ const onBeforeLeave = scrollPromise.pending
         <div class="items-center lg:flex">
             <div class="w-full lg:w-1/2">
                 <div class="lg:max-w-lg">
-                    <h1 class="text-3xl font-semibold text-gray-800 dark:text-white lg:text-4xl">Best place to choose <br> your <span class="text-blue-500 ">Comet Legislation Library</span></h1>
+                    <h1 class="text-3xl font-semibold text-gray-800 dark:text-white lg:text-4xl">Best place to choose <br> your <span class="text-pink-500 ">Comet Legislation Library</span></h1>
                     
                     <p class="mt-3 text-gray-600 dark:text-gray-400">In the legal field, one person's obligation is always based on another person's right. The concept of rights, rather than that of obligations, is the starting point of legal thought..</p>
                     
-                    <button class="w-full px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-blue-600 rounded-lg lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">Quick start</button>
+                    <button class="w-full px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-pink-600 rounded-lg lg:w-auto hover:bg-pink-500 focus:outline-none focus:bg-blue-500">Quick start</button>
                 </div>
             </div>
 
@@ -103,188 +103,142 @@ const onBeforeLeave = scrollPromise.pending
         </div>
     </div>
 </slot>
- <section class=" container mx-auto px-4 py-16">
-      <h2 class="font-bold text-3xl">Latest Articles</h2>
-
+    <section class=" container mx-auto px-4 py-16">
+        <h2 class="font-bold text-3xl">Legal department</h2>
         <div class="grid grid-cols-1 gap-8 md:grid-cols-2 mt-12 xl:grid-cols-3">
             <div>
-                <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80" src="https://images.unsplash.com/photo-1624996379697-f01d168b1a52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
-
+                <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80" src="/constitution.jpg" alt="">
                 <div class="mt-8">
-                    <span class="text-sky-500 uppercase tracking-wider">Provisions</span>
-
-                    <h1 class="mt-4 text-xl font-semibold text-gray-800 dark:text-white truncate">
-                        What do you want to know about UI
-                    </h1>
+                    <span class="text-sky-500 uppercase tracking-wider">abstract</span>
 
                     <p class="mt-2 text-gray-500 dark:text-gray-400">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est asperiores vel, ab animi
                         recusandae nulla veritatis id tempore sapiente
                     </p>
-
-                    <div class="flex items-center justify-between mt-4">
-                        <div>
-                            <a href="#" class="text-lg font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500">
-                                John snow
-                            </a>
-
-                            <p class="text-sm text-gray-500 dark:text-gray-400">February 1, 2022</p>
-                        </div>
-
                         <a href="#" class="inline-block text-sky-500 underline hover:text-sky-400">Read more</a>
-                    </div>
-
                 </div>
             </div>
-
             <div>
-                <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80" src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
-
+                <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80" src="/criminal.jpg" alt="">
                 <div class="mt-8">
-                    <span class="text-sky-500 uppercase tracking-wider">Article</span>
-
-                    <h1 class="mt-4 text-xl font-semibold text-gray-800 dark:text-white truncate">
-                        All the features you want to know</h1>
+                    <span class="text-sky-500 uppercase tracking-wider">abstract</span>
 
                     <p class="mt-2 text-gray-500 dark:text-gray-400">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est asperiores vel, ab animi
                         recusandae nulla veritatis id tempore sapiente
                     </p>
-
-                    <div class="flex items-center justify-between mt-4">
-                        <div>
-                            <a href="#" class="text-lg font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500">
-                                Arthur Melo
-                            </a>
-
-                            <p class="text-sm text-gray-500 dark:text-gray-400">February 6, 2022</p>
-                        </div>
-
                         <a href="#" class="inline-block text-sky-500 underline hover:text-sky-400">Read more</a>
-                    </div>
-
                 </div>
             </div>
-
             <div>
-                <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80" src="https://images.unsplash.com/photo-1597534458220-9fb4969f2df5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" alt="">
-
+                <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80" src="/civillaw.jpg" alt="">
                 <div class="mt-8">
-                    <span class="text-sky-500 uppercase tracking-wider">Article</span>
-
-                    <h1 class="mt-4 text-xl font-semibold text-gray-800 dark:text-white truncate">
-                        Which services you get from Meraki UI
-                    </h1>
+                    <span class="text-sky-500 uppercase tracking-wider">abstract</span>
 
                     <p class="mt-2 text-gray-500 dark:text-gray-400">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est asperiores vel, ab animi
                         recusandae nulla veritatis id tempore sapiente
                     </p>
-
-                    <div class="flex items-center justify-between mt-4">
-                        <div>
-                            <a href="#" class="text-lg font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500">
-                                Tom Hank
-                            </a>
-
-                            <p class="text-sm text-gray-500 dark:text-gray-400">February 19, 2022</p>
-                        </div>
-
                         <a href="#" class="inline-block text-sky-500 underline hover:text-sky-400">Read more</a>
-                    </div>
                 </div>
             </div>
+            <div>
+                <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80" src="/economic.jpg" alt="">
+                <div class="mt-8">
+                    <span class="text-sky-500 uppercase tracking-wider">abstract</span>
+
+                    <p class="mt-2 text-gray-500 dark:text-gray-400">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est asperiores vel, ab animi
+                        recusandae nulla veritatis id tempore sapiente
+                    </p>
+                        <a href="#" class="inline-block text-sky-500 underline hover:text-sky-400">Read more</a>
+                </div>
+            </div>
+            <div>
+                <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80" src="/proceeding.jpg" alt="">
+                <div class="mt-8">
+                    <span class="text-sky-500 uppercase tracking-wider">abstract</span>
+
+                    <p class="mt-2 text-gray-500 dark:text-gray-400">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est asperiores vel, ab animi
+                        recusandae nulla veritatis id tempore sapiente
+                    </p>
+                        <a href="#" class="inline-block text-sky-500 underline hover:text-sky-400">Read more</a>
+                </div>
+            </div>
+            <div>
+                <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80" src="/sociallaw.jpg" alt="">
+                <div class="mt-8">
+                    <span class="text-sky-500 uppercase tracking-wider">abstract</span>
+
+                    <p class="mt-2 text-gray-500 dark:text-gray-400">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est asperiores vel, ab animi
+                        recusandae nulla veritatis id tempore sapiente
+                    </p>
+                        <a href="#" class="inline-block text-sky-500 underline hover:text-sky-400">Read more</a>
+                </div>
+            </div>
+            <div>
+                <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80" src="/administrative.jpg" alt="">
+                <div class="mt-8">
+                    <span class="text-sky-500 uppercase tracking-wider">abstract</span>
+
+                    <p class="mt-2 text-gray-500 dark:text-gray-400">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est asperiores vel, ab animi
+                        recusandae nulla veritatis id tempore sapiente
+                    </p>
+                        <a href="#" class="inline-block text-sky-500 underline hover:text-sky-400">Read more</a>
+                </div>
+            </div> 
         </div>
     </section>
 
     <section class=" container mx-auto px-4 py-10 lg:py-16">
-        <h2 class="font-bold text-3xl">Most Popular</h2>
-             <div class="grid grid-cols-1 gap-8 md:grid-cols-2 mt-12 xl:grid-cols-3">
+        <h2 class="font-bold text-3xl">Official Document</h2>
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2 mt-12 xl:grid-cols-3">
             <div>
-                <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80" src="https://images.unsplash.com/photo-1624996379697-f01d168b1a52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
-
+                <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80" src="/regulate.jpg" alt="">
                 <div class="mt-8">
-                    <span class="text-sky-500 uppercase tracking-wider">Article</span>
-
-                    <h1 class="mt-4 text-xl font-semibold text-gray-800 dark:text-white truncate">
-                        What do you want to know about UI
-                    </h1>
-
+                    <span class="text-sky-500 uppercase tracking-wider">abstract</span>
                     <p class="mt-2 text-gray-500 dark:text-gray-400">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est asperiores vel, ab animi
                         recusandae nulla veritatis id tempore sapiente
                     </p>
-
-                    <div class="flex items-center justify-between mt-4">
-                        <div>
-                            <a href="#" class="text-lg font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500">
-                                John snow
-                            </a>
-
-                            <p class="text-sm text-gray-500 dark:text-gray-400">February 1, 2022</p>
-                        </div>
-
                         <a href="#" class="inline-block text-sky-500 underline hover:text-sky-400">Read more</a>
-                    </div>
-
                 </div>
             </div>
 
             <div>
-                <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80" src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
-
+                <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80" src="/party.jpg" alt="">
                 <div class="mt-8">
-                    <span class="text-sky-500 uppercase tracking-wider">Article</span>
-
-                    <h1 class="mt-4 text-xl font-semibold text-gray-800 dark:text-white truncate">
-                        All the features you want to know</h1>
-
+                    <span class="text-sky-500 uppercase tracking-wider">abstract</span>
                     <p class="mt-2 text-gray-500 dark:text-gray-400">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est asperiores vel, ab animi
                         recusandae nulla veritatis id tempore sapiente
                     </p>
-
-                    <div class="flex items-center justify-between mt-4">
-                        <div>
-                            <a href="#" class="text-lg font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500">
-                                Arthur Melo
-                            </a>
-
-                            <p class="text-sm text-gray-500 dark:text-gray-400">February 6, 2022</p>
-                        </div>
-
                         <a href="#" class="inline-block text-sky-500 underline hover:text-sky-400">Read more</a>
-                    </div>
-
                 </div>
             </div>
-
             <div>
-                <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80" src="https://images.unsplash.com/photo-1597534458220-9fb4969f2df5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" alt="">
-
+                <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80" src="/policy.jpg" alt="">
                 <div class="mt-8">
-                    <span class="text-sky-500 uppercase tracking-wider">Article</span>
-
-                    <h1 class="mt-4 text-xl font-semibold text-gray-800 dark:text-white truncate">
-                        Which services you get from Meraki UI
-                    </h1>
-
+                    <span class="text-sky-500 uppercase tracking-wider">abstract</span>
                     <p class="mt-2 text-gray-500 dark:text-gray-400">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est asperiores vel, ab animi
                         recusandae nulla veritatis id tempore sapiente
                     </p>
-
-                    <div class="flex items-center justify-between mt-4">
-                        <div>
-                            <a href="#" class="text-lg font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500">
-                                Tom Hank
-                            </a>
-
-                            <p class="text-sm text-gray-500 dark:text-gray-400">February 19, 2022</p>
-                        </div>
-
                         <a href="#" class="inline-block text-sky-500 underline hover:text-sky-400">Read more</a>
-                    </div>
+                </div>
+            </div>
+            <div>
+                <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80" src="/explain.jpg" alt="">
+                <div class="mt-8">
+                    <span class="text-sky-500 uppercase tracking-wider">abstract</span>
+                    <p class="mt-2 text-gray-500 dark:text-gray-400">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est asperiores vel, ab animi
+                        recusandae nulla veritatis id tempore sapiente
+                    </p>
+                        <a href="#" class="inline-block text-sky-500 underline hover:text-sky-400">Read more</a>
                 </div>
             </div>
         </div>
@@ -327,8 +281,8 @@ const onBeforeLeave = scrollPromise.pending
                     <p class="font-semibold text-gray-800 dark:text-white">Contact Us</p>
 
                     <div class="flex flex-col items-start mt-5 space-y-2">
-                        <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">+880 768 473 4978</a>
-                        <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">info@merakiui.com</a>
+                        <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">1943888301</a>
+                        <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">flyigloo@gmail.com</a>
                     </div>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 {
   "name": "comet-doc",
   "description": "code library",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "MIT",
   "type": "module",
   "author": "passwordgloo",

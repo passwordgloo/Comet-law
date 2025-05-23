@@ -10,7 +10,7 @@ export const zhNavbar = [
         text: '法律法规',
         children: [
             {
-                text:'法律文件',
+                text:'国家法律',
                 children:
                 [
                     { text: '宪法相关法', link: 'constitution/' },
@@ -23,13 +23,17 @@ export const zhNavbar = [
                 ]
             },
             {
-                text: '部门规章',
-                link: 'regulate/1.1',
-            },
+                text:'法规规章',
+                children:
+                [
+                    { text: '行政法规', link: 'council/1.1' },
+                    { text: '部门规章', link: 'department/1.1.1' },
+                ]
+            }
         ],
     },
     {
-        text: '非法律',
+        text: '公文文件',
         children: [
             { text: '党务会议',link: 'party/1',},
             { text: '司法解释',link: 'explain/1.1',},
@@ -54,8 +58,6 @@ export const enNavbar = [
     {
         text: 'Home',
         link: '/en/',
-        // 该元素将一直处于激活状态
-        activeMatch: '/',
     },
     //两层嵌套
     {
