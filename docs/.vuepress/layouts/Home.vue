@@ -291,13 +291,9 @@ const onBeforeLeave = scrollPromise.pending
             
             <div class="flex flex-col items-center justify-between sm:flex-row">
                 <a class="text-2xl font-medium text-sky-500 transition-colors flex items-center duration-300 transform dark:text-sky-400 hover:text-sky-400 dark:hover:text-sky-300" href="#">
-          
-
                     <img class="h-10 w-10 lg:max-w-3xl" src="/comet.svg" alt="Catalogue-pana.svg">
-
-                    <h3 class="mx-2">Comet Ligislation</h3>
+                    <h3 class="mx-2">Comet Legislation</h3>
                 </a>
-
                 <p class="mt-4 text-sm text-gray-500 sm:mt-0 dark:text-gray-300">MIT Licensed | © Copyright 2025. All Rights Reserved.</p>
             </div>
         </div>

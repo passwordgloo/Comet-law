@@ -55,7 +55,6 @@ export const zhSidebar = {
             children: [
                 {text: '工伤保险条例',link: '2.1'},
                 {text: '失业保险条例',link: '2.2'},
-                {text: '失业保险条例',link: '2.2'},
                 {text: '劳动保障监察条例',link: '2.3'},
                 {text: '残疾人就业条例',link: '2.4'},
                 {text: '职工带薪年休假条例',link: '2.5'},
@@ -221,20 +220,30 @@ export const zhSidebar = {
                 {text: '中华人民共和国未成年人保护法',link: '2.4'},
                 {text: '中华人民共和国预防未成年人犯罪法',link: '2.5'},
                 {text: '中华人民共和国家庭教育促进法',link: '2.6'},
-                {text: '中华人民共和国残疾人保障法',link: '2.7'}
+                {text: '中华人民共和国反家庭暴力法',link: '2.7'},
+                {text: '中华人民共和国残疾人保障法',link: '2.8'}
             ],
         },
         {   
             text: '社会组织',
-            //可折叠侧边栏
-            // collapsible: true,
             children: [
                 {text: '中华人民共和国慈善法',link: '3.1'},
                 {text: '中华人民共和国公益事业捐赠法',link: '3.2'}
             ],
         },
-        {text: '中华人民共和国劳动合同法',link: '4'},
-        {text: '中华人民共和国社会保险法',link: '5'},
+        {   
+            text: '劳动保护',
+            children: [
+                {text: '中华人民共和国劳动合同法',link: '4.1'},
+                {text: '中华人民共和国职业病防治法',link: '4.2'},
+                {text: '中华人民共和国就业促进法',link: '4.3'},
+                {text: '中华人民共和国精神卫生法',link: '4.4'},
+                {text: '中华人民共和国劳动争议调解仲裁法',link: '4.5'},
+                {text: '中华人民共和国个人所得税法',link: '4.6'},
+            ],
+        },
+        {text: '中华人民共和国乡村振兴促进法',link: '5'},
+        {text: '中华人民共和国社会保险法',link: '6'},
     ]
 }
 
@@ -242,8 +251,6 @@ export const enSidebar = {
     '/en/civillaw/': [
         {   
             text: 'Civil Code',
-            //可折叠侧边栏
-            // collapsible: true,
             children: [
                 {text: 'General Part',link: '1'},
                 {text: 'Real Rights',link: '2'},
