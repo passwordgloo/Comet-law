@@ -1,5 +1,8 @@
 ---
 layout: Home
+heroImage: /comet.png
+heroText: Comet legislation library
+tagline: In the legal field, one person's obligation is always based on another person's right. The concept of rights, rather than that of obligations, is the starting point of legal thought..
 ---
 
 <!-- ---

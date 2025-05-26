@@ -59,10 +59,33 @@ onContentUpdated(() => {
   toggleSidebar(false)
 })
 
+const heroText = computed(() => {
+  if (frontmatter.value.heroText === null) {
+    return null
+  }
+  return frontmatter.value.heroText || siteLocale.value.title || 'Hello'
+})
+const tagline = computed(() => {
+  if (frontmatter.value.tagline === null) {
+    return null
+  }
+
+  return (
+    frontmatter.value.tagline ||
+    siteLocale.value.description ||
+    'Welcome to your VuePress site'
+  )
+})
+
+const heroAlt = computed(
+  () => frontmatter.value.heroAlt || heroText.value || 'hero',
+)
+
 // handle scrollBehavior with transition
 const scrollPromise = useScrollPromise()
 const onBeforeEnter = scrollPromise.resolve
 const onBeforeLeave = scrollPromise.pending
+
 </script>
 
 <template>
@@ -89,10 +112,8 @@ const onBeforeLeave = scrollPromise.pending
         <div class="items-center lg:flex">
             <div class="w-full lg:w-1/2">
                 <div class="lg:max-w-lg">
-                    <h1 class="text-3xl font-semibold text-gray-800 dark:text-white lg:text-4xl">Best place to choose <br> your <span class="text-pink-500 ">Comet Legislation Library</span></h1>
-                    
-                    <p class="mt-3 text-gray-600 dark:text-gray-400">In the legal field, one person's obligation is always based on another person's right. The concept of rights, rather than that of obligations, is the starting point of legal thought..</p>
-                    
+                    <h1 class="text-3xl font-semibold text-gray-800 dark:text-white lg:text-4xl">{{ heroText }}</h1>
+                    <p class="mt-3 text-gray-600 dark:text-gray-400">{{ tagline }}</p>
                     <button class="w-full px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-pink-600 rounded-lg lg:w-auto hover:bg-pink-500 focus:outline-none focus:bg-blue-500">Quick start</button>
                 </div>
             </div>
