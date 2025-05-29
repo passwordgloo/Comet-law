@@ -10,25 +10,25 @@ const props = defineProps({
       {
         item: "1",
         index: 1,
-        img: '/tide.jpg',
+        img: 'https://file.iglooblog.top/comet_law/tide.jpg',
         url: 'https://tide.iglooblog.top'
       },
       {
         item: "2",
         index: 2,
-        img: '/wiki.jpg',
+        img: 'https://file.iglooblog.top/comet_law/wiki.jpg',
         url:'https://wiki.iglooblog.top'
       },
       {
         item: "3",
         index: 3,
-        img: '/law.jpg',
+        img: 'https://file.iglooblog.top/comet_law/law.jpg',
         url:'https://law.iglooblog.top'
       },
       {
         item: "4",
         index: 4,
-        img: '/media.jpg',
+        img: 'https://file.iglooblog.top/comet_law/media.jpg',
         url:'https://media.iglooblog.top'
       }
     ]
@@ -168,8 +168,8 @@ onUnmounted(() => {
         <img class="banner-img" @click="bannerLink" :src="item.img" :title="description" />
       </li>
     </ul>
-    <span class="left-button" @click="switchBanner('left')"><img src="/left.webp" class="icon" /></span>
-    <span class="right-button" @click="switchBanner('right')"><img src="/right.webp" class="icon" /></span>
+    <span class="left-button" @click="switchBanner('left')"><img src="https://file.iglooblog.top/comet_law/left.webp" class="icon" /></span>
+    <span class="right-button" @click="switchBanner('right')"><img src="https://file.iglooblog.top/comet_law/right.webp" class="icon" /></span>
     <ul class="banner-indicator">
       <span v-for="index in listBanner.length" :key="index" class="barExternal" @click="swatchIndicator(index - 1)">
         <li ref="indicatorRef" class="default-indicator" :class="{ 'active-indicator': index - 1 === 0 }"></li>
