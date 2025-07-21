@@ -6,6 +6,7 @@ import { zhNavbar, enNavbar } from './navbar.js'
 import { zhSidebar, enSidebar } from './sidebar.js'
 import { viteBundler } from '@vuepress/bundler-vite'
 import tailwindcss from '@tailwindcss/postcss'
+import { sitemapPlugin } from '@vuepress/plugin-sitemap'
 
 export default defineUserConfig({
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
@@ -58,7 +59,11 @@ export default defineUserConfig({
       apiKey: process.env.SEARCH_KEY,
       indexUid: 'law',
     }),
-    
+    sitemapPlugin({
+      hostname: "https://law.iglooblog.top",
+      changefreq: 'daily',
+      priority: 1,
+    }),
     blogPlugin({
       // Only files under posts are articles
       // filter: ({ filePathRelative }) =>
