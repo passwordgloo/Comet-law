@@ -48,6 +48,7 @@ export const zhSidebar = {
             children: [
                 {text: '社会救助暂行办法',link: '1.1'},
                 {text: '自然灾害救助条例',link: '1.2'},
+                {text: '突发公共卫生事件应急条例',link: '1.3'},
             ]
         },
         {   
@@ -61,6 +62,7 @@ export const zhSidebar = {
                 {text: '国务院关于职工工作时间的规定',link: '2.6'},
                 {text: '社会保险费征缴暂行条例',link: '2.7'},
                 {text: '信访工作条例',link: '2.8'},
+                
             ]
         },
         {   
