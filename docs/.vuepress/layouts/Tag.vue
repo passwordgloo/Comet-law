@@ -12,22 +12,26 @@ const routePath = useRoutePath()
   <ParentLayout>
     <template #page>
       <main class="page">
-        <div class="tag-wrapper">
-          <RouteLink
-            v-for="({ items, path }, name) in tagMap.map"
-            :key="name"
-            :to="path"
-            :active="routePath === path"
-            class="tag"
-          >
-            {{ name }}
-            <span class="tag-num">
-              {{ items.length }}
-            </span>
-          </RouteLink>
-        </div>
+        <div class="tag-wrapper text-base">
+          <div class="tag-container flex flex-wrap gap-3 mb-6">
+            <RouteLink
+              v-for="({ items, path }, name) in tagMap.map"
+              :key="name"
+              :to="path"
+              :active="routePath === path"
+              class="tag inline-flex items-center px-3 py-2 rounded-md text-base font-medium cursor-pointer transition-all duration-300 border border-transparent dark:border-transparent hover:border-slate-300 dark:hover:border-slate-600 hover:shadow-md"
+            >
+              {{ name }}
+              <span class="tag-count flex items-center justify-center min-w-6 h-6 ml-2 px-1.5 rounded-full text-sm font-medium bg-slate-200 text-slate-700 dark:bg-slate-700 dark:text-slate-300">
+                {{ items.length }}
+              </span>
+            </RouteLink>
+          </div>
 
-        <ArticleList :items="tagMap.currentItems ?? []" />
+          <div class="mt-8">
+            <ArticleList :items="tagMap.currentItems ?? []" />
+          </div>
+        </div>
       </main>
     </template>
   </ParentLayout>
@@ -37,57 +41,45 @@ const routePath = useRoutePath()
 @use '@vuepress/theme-default/styles/mixins';
 
 .tag-wrapper {
-  padding-bottom: 0 !important;
-  font-size: 0.875em;
-  padding-top: calc(var(--navbar-height) + 1rem) !important;
   @include mixins.content-wrapper;
-
+  padding-top: 4rem !important; // 增加更多顶部内边距防止被遮挡
+  margin-top: 0 !important;
+  position: relative !important;
+  z-index: 1 !important;
+  
   .route-link {
     color: inherit;
+    text-decoration: none;
   }
+  
+  .route-link-active {
+    background-color: var(--vp-c-accent) !important;
+    color: white !important;
+    border-color: transparent !important;
+    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3) !important;
+  }
+  
+  .route-link-active .tag-count {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    color: white !important;
+  }
+}
 
+// 响应式设计
+@media (max-width: 640px) {
+  .tag-container {
+    gap: 0.5rem !important;
+  }
+  
   .tag {
-    display: inline-block;
-    vertical-align: middle;
-
-    overflow: hidden;
-
-    margin: 0.3rem 0.6rem 0.8rem;
-    padding: 0.4rem 0.8rem;
-    border-radius: 0.25rem;
-
-    cursor: pointer;
-
-    transition:
-      background 0.3s,
-      color 0.3s;
-
-    @media (max-width: 419px) {
-      font-size: 0.9rem;
-    }
-
-    .tag-num {
-      display: inline-block;
-
-      min-width: 1rem;
-      height: 1.2rem;
-      margin-inline-start: 0.2em;
-      padding: 0 0.1rem;
-      border-radius: 0.6rem;
-
-      font-size: 0.7rem;
-      line-height: 1.2rem;
-      text-align: center;
-    }
-
-    &.route-link-active {
-      background: var(--vp-c-accent-bg);
-      color: var(--vp-c-accent-text);
-
-      .tag-num {
-        color: var(--vp-c-accent-text);
-      }
-    }
+    padding: 0.4rem 0.6rem !important;
+    font-size: 0.9rem !important;
+  }
+  
+  .tag-count {
+    min-width: 1.2rem !important;
+    height: 1.2rem !important;
+    font-size: 0.7rem !important;
   }
 }
 </style>

@@ -21,7 +21,7 @@ defineProps({
       @click="$router.push(path)"
     >
       <header class="title">
-        {{
+        {{ 
           (isTimeline ? `${new Date(info.date).toLocaleDateString()}: ` : '') +
           info.title
         }}
@@ -52,7 +52,10 @@ defineProps({
 @use '@vuepress/theme-default/styles/mixins';
 
 .article-wrapper {
-  padding-top: calc(var(--navbar-height) + 1rem) !important;
+  padding-top: 4rem !important; // 增加更多顶部内边距防止被遮挡
+  margin-top: 0 !important;
+  position: relative !important;
+  z-index: 1 !important;
   text-align: center;
   @include mixins.content-wrapper;
 }
