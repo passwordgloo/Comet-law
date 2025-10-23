@@ -31,7 +31,7 @@ Comet-law是一个基于VuePress 2 + Tailwind CSS 4 + Meilisearch构建的现代
 ## 本地部署
 
 ### 环境要求
-- Node.js v16.0.0+ 
+- Node.js v20.9.0+ 
 - pnpm v8.0.0+
 
 ### 安装步骤
