@@ -5,6 +5,8 @@ import Category from './layouts/Category.vue'
 import Home from './layouts/Home.vue'
 import Tag from './layouts/Tag.vue'
 import Timeline from './layouts/Timeline.vue'
+// 导入 Tailwind CSS 样式
+import './styles/tailwind.css'
 
 export default defineClientConfig({
   // we provide some blog layouts

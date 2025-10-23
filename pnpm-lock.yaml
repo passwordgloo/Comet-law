@@ -8,15 +8,12 @@ importers:
 
   .:
     dependencies:
-      '@tailwindcss/postcss':
+      '@tailwindcss/vite':
         specifier: ^4.1.16
-        version: 4.1.16
+        version: 4.1.16(vite@7.0.8(@types/node@24.9.1)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.93.2)(sass@1.93.2))
       '@vuepress/plugin-meilisearch':
         specifier: 2.0.0-rc.112
         version: 2.0.0-rc.112(vuepress@2.0.0-rc.24(@vuepress/bundler-vite@2.0.0-rc.24(@types/node@24.9.1)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.93.2)(sass@1.93.2))(vue@3.5.22))
-      postcss:
-        specifier: ^8.5.6
-        version: 8.5.6
       tailwindcss:
         specifier: ^4.1.16
         version: 4.1.16
@@ -50,10 +47,6 @@ importers:
         version: 2.0.0-rc.24(@vuepress/bundler-vite@2.0.0-rc.24(@types/node@24.9.1)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.93.2)(sass@1.93.2))(vue@3.5.22)
 
 packages:
-
-  '@alloc/quick-lru@5.2.0':
-    resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
-    engines: {node: '>=10'}
 
   '@babel/code-frame@7.27.1':
     resolution: {integrity: sha512-cjQ7ZlQ0Mv3b47hABuTevyTuYN4i+loJKGeV9flcCgIK37cCXRh+L1bd3iBHlynerhQ7BhCkn2BPbQUL+rGqFg==}
@@ -621,8 +614,10 @@ packages:
     resolution: {integrity: sha512-2OSv52FRuhdlgyOQqgtQHuCgXnS8nFSYRp2tJ+4WZXKgTxqPy7SMSls8c3mPT5pkZ17SBToGM5LHEJBO7miEdg==}
     engines: {node: '>= 10'}
 
-  '@tailwindcss/postcss@4.1.16':
-    resolution: {integrity: sha512-Qn3SFGPXYQMKR/UtqS+dqvPrzEeBZHrFA92maT4zijCVggdsXnDBMsPFJo1eArX3J+O+Gi+8pV4PkqjLCNBk3A==}
+  '@tailwindcss/vite@4.1.16':
+    resolution: {integrity: sha512-bbguNBcDxsRmi9nnlWJxhfDWamY3lmcyACHcdO1crxfzuLpOhHLLtEIN/nCbbAtj5rchUgQD17QVAKi1f7IsKg==}
+    peerDependencies:
+      vite: ^5.2.0 || ^6 || ^7
 
   '@types/debug@4.1.12':
     resolution: {integrity: sha512-vIChWdVG3LG1SMxEvI/AK+FWJthlrqlTu7fbrlywTkkaONwk/UAGaULXRlf8vkzFBLVm0zkMdCquhL5aOjhXPQ==}
@@ -2092,8 +2087,6 @@ packages:
 
 snapshots:
 
-  '@alloc/quick-lru@5.2.0': {}
-
   '@babel/code-frame@7.27.1':
     dependencies:
       '@babel/helper-validator-identifier': 7.27.1
@@ -2498,13 +2491,12 @@ snapshots:
       '@tailwindcss/oxide-win32-arm64-msvc': 4.1.16
       '@tailwindcss/oxide-win32-x64-msvc': 4.1.16
 
-  '@tailwindcss/postcss@4.1.16':
+  '@tailwindcss/vite@4.1.16(vite@7.0.8(@types/node@24.9.1)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.93.2)(sass@1.93.2))':
     dependencies:
-      '@alloc/quick-lru': 5.2.0
       '@tailwindcss/node': 4.1.16
       '@tailwindcss/oxide': 4.1.16
-      postcss: 8.5.6
       tailwindcss: 4.1.16
+      vite: 7.0.8(@types/node@24.9.1)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.93.2)(sass@1.93.2)
 
   '@types/debug@4.1.12':
     dependencies:

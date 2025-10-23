@@ -21,7 +21,7 @@ defineSlots<{
   'page-content-bottom'?: Slot
 }>()
 
-const { frontmatter, page, themeLocale } = useData()
+const { frontmatter, page, themeLocale, site } = useData()
 
 // navbar
 const shouldShowNavbar = computed(
@@ -63,7 +63,7 @@ const heroText = computed(() => {
   if (frontmatter.value.heroText === null) {
     return null
   }
-  return frontmatter.value.heroText || siteLocale.value.title || 'Hello'
+  return frontmatter.value.heroText || themeLocale.value.title || 'Hello'
 })
 const tagline = computed(() => {
   if (frontmatter.value.tagline === null) {
@@ -72,7 +72,7 @@ const tagline = computed(() => {
 
   return (
     frontmatter.value.tagline ||
-    siteLocale.value.description ||
+    themeLocale.value.description ||
     'Welcome to your VuePress site'
   )
 })
@@ -86,6 +86,9 @@ const scrollPromise = useScrollPromise()
 const onBeforeEnter = scrollPromise.resolve
 const onBeforeLeave = scrollPromise.pending
 
+// 添加缺失的触摸事件处理函数
+const onTouchStart = () => {}
+const onTouchEnd = () => {}
 </script>
 
 <template>

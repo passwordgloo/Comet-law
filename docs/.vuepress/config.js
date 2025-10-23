@@ -5,7 +5,7 @@ import { meilisearchPlugin } from '@vuepress/plugin-meilisearch'
 import { zhNavbar, enNavbar } from './navbar.js'
 import { zhSidebar, enSidebar } from './sidebar.js'
 import { viteBundler } from '@vuepress/bundler-vite'
-import tailwindcss from '@tailwindcss/postcss'
+import tailwindcss from '@tailwindcss/vite'
 import { sitemapPlugin } from '@vuepress/plugin-sitemap'
 
 export default defineUserConfig({
@@ -169,13 +169,9 @@ export default defineUserConfig({
 
   bundler: viteBundler({
     viteOptions: {
-      css: {
-        postcss: {
-          plugins: [
-            tailwindcss()
-          ]
-        }
-      }
+      plugins: [
+        tailwindcss()
+      ]
     }
   })
 })

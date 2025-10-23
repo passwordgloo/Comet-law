@@ -34,9 +34,8 @@
     "vuepress": "2.0.0-rc.24"
   },
   "dependencies": {
-    "@tailwindcss/postcss": "^4.1.16",
+    "@tailwindcss/vite": "^4.1.16",
     "@vuepress/plugin-meilisearch": "2.0.0-rc.112",
-    "postcss": "^8.5.6",
     "tailwindcss": "^4.1.16"
   }
 }
