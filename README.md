@@ -4,7 +4,16 @@
 
 ## 项目介绍
 
-Comet-law是一个基于VuePress构建的法律法规资料库，提供中英文双语支持，收录了宪法、民法、刑法、行政法等多个法律领域的内容。项目采用现代化UI设计，结合Tailwind CSS实现响应式布局，并集成搜索功能以便快速检索法律条文。
+Comet-law是一个基于VuePress 2 + Tailwind CSS 4 + Meilisearch构建的现代化法律法规资料库，提供中英文双语支持，收录了宪法、民法、刑法、行政法等多个法律领域的内容。项目采用现代化UI设计，实现响应式布局，并集成高效搜索功能以便快速检索法律条文。
+
+## 技术架构
+
+项目采用最新的前端技术栈，主要包括：
+- **VuePress 2** - 静态网站生成器，提供强大的文档站点功能
+- **Tailwind CSS 4** - 实用优先的CSS框架，实现高效的UI开发和响应式设计
+- **Meilisearch** - 轻量级搜索引擎，用于实现全文检索功能
+
+选择Meilisearch的原因是Algolia在免费额度下无法大批量建立法律文本等超大文本索引，而Meilisearch提供了更好的自托管体验和更适合大量文本索引的能力。
 
 ## 功能特点
 
@@ -22,8 +31,8 @@ Comet-law是一个基于VuePress构建的法律法规资料库，提供中英文
 ## 本地部署
 
 ### 环境要求
-- Node.js v14.0.0+ 
-- pnpm v6.0.0+
+- Node.js v16.0.0+ 
+- pnpm v8.0.0+
 
 ### 安装步骤
 
@@ -39,6 +48,8 @@ pnpm install
 ```
 
 3. 配置环境变量（可选，用于搜索功能）
+
+搜索功能需要在系统环境变量中配置以下参数，这些参数在`Comet-law/docs/.vuepress/config.js`文件的第58-60行被引用：
 ```bash
 export HOST_KEY=你的Meilisearch主机地址
 export SEARCH_KEY=你的Meilisearch API密钥
@@ -73,11 +84,7 @@ docs/
 
 ## 贡献指南
 
-1. Fork本仓库
-2. 创建分支 (`git checkout -b feature/amazing-feature`)
-3. 提交更改 (`pnpm run commit` 遵循规范提交信息)
-4. 推送到分支 (`git push origin feature/amazing-feature`)
-5. 创建Pull Request
+欢迎对本项目进行贡献！如果你有任何想法或改进，欢迎直接提交代码或提出问题。贡献时请确保遵循项目的代码风格和提交规范。
 
 ## 许可证
 
@@ -85,6 +92,6 @@ docs/
 
 ## 致谢
 
-- [VuePress](https://vuepress.vuejs.org/) - 静态网站生成器
+- [VuePress 2](https://v2.vuepress.vuejs.org/) - 静态网站生成器
 - [Tailwind CSS](https://tailwindcss.com/) - CSS框架
 - [Meilisearch](https://www.meilisearch.com/) - 搜索引擎
