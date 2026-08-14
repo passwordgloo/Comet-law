@@ -6,7 +6,7 @@
   "type": "module",
   "packageManager": "pnpm@11.21.0",
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "author": "passwordgloo",
   "homepage": "https://law.iglooblog.top",
